@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <!-- Links -->
+    <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Material+Icons|Lato:600,700|Roboto+Slab:400,700" media='all' /><!-- Open+Sans -->
+    <!-- Compiled from css/styles.less > styles.css-->
+    <link type="text/css" rel="stylesheet" href="css/styles.min.css" media='all' />
+    <!-- Page hiding snippet (recommended)  
+     *Added to default styles > .async-hide { opacity: 0 !important } -->
+    <script>
+        (function(a, s, y, n, c, h, i, d, e) {
+            s.className += ' ' + y;
+            h.start = 1 * new Date;
+            h.end = i = function() {
+                s.className = s.className.replace(RegExp(' ?' + y), '')
+            };
+            (a[n] = a[n] || []).hide = h;
+            setTimeout(function() {
+                i();
+                h.end = null
+            }, c);
+            h.timeout = c;
+        })(window, document.documentElement, 'async-hide', 'dataLayer', 4000, {
+            'GTM-5CPS7SP': true
+        });
+
+    </script>
+    <!-- Analytics-Optimize snippet -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-96654872-1', 'auto');
+        ga('require', 'GTM-5CPS7SP'); //Optimize Snippet
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+    <header class="row z-depth-3" role="banner">
+        <a itemscope itemtype="http://schema.org/Person" itemprop="name">
+            <div id="hdrTitle" class="col s9 m6 l5 push-s2 push-m1 push-l1 valign">
+                <span class="font-xs"></span>
+                <span itemprop="name"></span>
+                <span class="font-xs"></span>
+            </div>
+        </a>
+        <div id="hdrBtns" class="col s5 m5 l6 offset-s7 offset-l1 right-align">
+            <ul>
+                <li class="hdrBtn"><i class="icon-m material-icons left">print</i></li>
+                <li class="hdrBtn" data-modal="mdl1"><i class="icon-m material-icons left">cloud_download</i></li>
+                <li class="hdrBtn" data-activates="drpJmp"><i class="icon-m material-icons left">publish</i></li>
+                <li class="hdrBtn"><i class="icon-m material-icons left">search</i></li>
+                <!-- Search Btns -->
+                <li id="srchBtns">
+                    <i class="srchCnl material-icons icon-m">cancel</i>
+                </li>
+            </ul>
+            <div id="hdrSrchDiv1" class="input-field inline">
+                <input placeholder="&nbsp;search keywords" id="hdrSrch" type="text" class="font-sPlus">
+                <label for="hdrSrch" class="font-s">Quick Search</label>
+            </div>
+        </div>
+    </header>
+    <!-- End Header-->
+    <br />
+    <div class="row">
+        <section id="docs-Section" class="col s10 m8 l8 z-depth-4" role="main" itemscope itemtype="http://schema.org/Person">
+            <article id="hdrQual">
+                <blockquote>
+                    <div class="hdr4"></div>
+                </blockquote>
+                <!-- Begin QUAL Tmpl -->
+                <template id='qual-tmpl'>
+               <div class="row">
+                  <div class="qualData col s12">
+                  </div>
+               </div>
+            </template>
+                <!-- End SOFT Tmpl -->
+            </article>
+            <article id="hdrSoft">
+                <blockquote>
+                    <div class="hdr4"></div>
+                </blockquote>
+                <!-- Begin Soft Tmpl -->
+                <template id='soft-tmpl'>
+               <div class="softData col s4" data-hdr="1">
+               </div>
+            </template>
+                <!-- End SHK Tmpl -->
+            </article>
+            <article id="hdrAccr">
+                <blockquote>
+                    <div class="hdr4"></div>
+                </blockquote>
+                <div class="row" itemscope itemtype='http://schema.org/EducationalOrganization'>
+                    <div class="col s6">
+                        <div class="hdr7"></div>
+                        <div class="hdr7"></div>
+                        <div class="hdr7"></div>
+                    </div>
+                    <div class="col s6">
+                        <div class="hdr7"></div>
+                        <div class="hdr7"></div>
+                        <div class="hdr7"></div>
+                        <div class="hdr7"></div>
+                    </div>
+                </div>
+            </article>
+            <article id="hdrLate">
+                <blockquote>
+                    <div class="hdr4"></div>
+                </blockquote>
+                <!-- Begin REH Tmpl -->
+                <template id='late-tmpl'>
+               <div class='row hdrow'>
+                  <div class='lateData col s12' itemscope itemtype='http://schema.org/Organization'>
+                     <div class="row" itemscope itemtype="http://schema.org/Event">
+                        <div class='col s9 jobinfo'>
+                           <span class='jobtitle font-mSmll'  itemprop='jobTitle'></span>
+                           <span class='jobcomp font-sLrg' itemprop='name'></span>
+                        </div>
+                        <div class='col s3 font-xsPlus jobdate'></div>
+                     </div>
+                     <div class='empsum font-s' itemprop='description'></div>
+                     <ul></ul>
+                  </div>
+               </div>
+         </template>
+                <!-- End REH Tmpl -->
+            </article>
+            <div id="hdrOthr">
+                <div id="othrHdr" class="font-m"></div>
+                <ul class="center-align"></ul>
+            </div>
+            <div id="caboose" class="font-s center-align"></div>
+            <br />
+        </section>
+        <!-- Container END -->
+        <section id="ads-Section" class="col l3 hide-on-med-and-down">
+        </section>
+    </div>
+    <!-- End Grid Row-->
+    <footer>
+        <div class="row">
+            <a id="btnUp" class="center-align"><i class="icon-mPlus material-icons right">arrow_upward</i><span class="font-s">Back To Top</span></a>
+            <a class="vwCvrLtr font-s hide-on-med-and-down" data-modal="mdl2">View Cover Letter</a>
+            <div id="contactDiv" class="col s5 push-s2" itemscope itemtype="http://schema.org/Person">
+                <div id="ftrLbl1" class="font-xs left">Contact Info:</div>
+                <ul>
+                    <li id="contact1" class="font-sPlus valign-wrapper"><i class="icon-mPlus material-icons no-hover" alt="E-Mail">mail_outline</i></li>
+                    <li id="contact2" class="font-sPlus valign-wrapper"><i class="icon-mPlus no-hover material-icons" alt="Call">perm_phone_msg</i></li>
+                </ul>
+            </div>
+            <div id="social-lnks" class="col s4 push-s2">
+                <div id="ftrLbl2" class="font-xs left">Social Connect:</div>
+                <ul class="soc">
+                    <li>
+                        <a class="soc-facebook"></a>
+                    </li>
+                    <li>
+                        <a class="soc-linkedin"></a>
+                    </li>
+                    <li>
+                        <a class="soc-skype"></a>
+                    </li>
+                    <li>
+                        <a class="soc-googleplus"></a>
+                    </li>
+                    <li>
+                        <a class="soc-telegram"></a>
+                    </li>
+                    <li>
+                        <a class="soc-github"></a>
+                    </li>
+                    <li>
+                        <a class="soc-mail"></a>
+                    </li>
+                    <li>
+                        <a class="soc-sharethis soc-icon-last"></a>
+                    </li>
+                    <li>
+    <a class="soc-pp258"><img src="../img/pp258.png" /></a>
+</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row center-align hide-on-small-only">
+            <div id="copyr" class="col s12 font-miPlus"></div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Floating Buttons -->
+
+    <a id="mngPg" class="font-mi" href="" target="_blank" rel="noopener">
+        <i class="tiny material-icons">settings_applications</i>
+    </a>
+    <!-- Mozilla TogetherJS PlaceHolder-->
+
+    <!-- Misc. - Modals -->
+    <div id="mdl1" class="modal">
+        <div class="dragHdr"><i class="material-icons right">cancel</i></div>
+        <div class="mdlLbl1 font-l"></div>
+        <div class='rowpad'>
+            <div class="mdlLdCnt font-s"></div>
+        </div>
+    </div>
+    <!-- Prod JS Framework Scripts -->
+    <script src="https://cdn.jsdelivr.net/g/jquery,lodash"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.min.js"></script>
+    <script src="src/script.min.js"></script>
+    <script src="src/data.min.js"></script>
+    <script src="https://printjs-4de6.kxcdn.com/print.min.js" async defer></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+    <!-- Inactive Scripts - Still Testing) -->
+    <!--script src="https://togetherjs.com/togetherjs-min.js"></script-->
+</body>
+
+</html>
