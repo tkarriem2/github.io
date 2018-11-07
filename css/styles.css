@@ -645,8 +645,14 @@ footer .vwCvrLtr:focus {
 .soc-sharethis:before {
   content: '\e072';
 }
+.soc-pp258 {
+  background-image: "..img/pp258.png";
+}
 .soc-pp258:hover {
-  background-color: transparent;
+  background-color: yellow;
+}
+.soc-pp258:before {
+  content: '\e050';
 }
 #btnUp {
   right: 1rem;
