@@ -440,7 +440,7 @@ function setSocBtns() {
     var g = $('.soc a').toArray();
     $.each(socLinks, function (i, v) {
         $(g[i]).attr('href', v);
-        if ((v.search("http") === 0) || (v.search("paypal") === 0)) {
+        if (v.search("http") === 0) {
             $(g[i]).attr({
                 'target': '_blank',
                 'rel': 'noopener'
