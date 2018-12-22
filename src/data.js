@@ -2,10 +2,10 @@
 var resData = {
     "name": "M. Todd Karriem",
     "subname": "MCSE+I, MCSA, MCP & DCSE",
-    "title": "Resume 2018 Winter (Beta)",
+    "title": "Resume 2019 Winter(Beta)",
     "contact": "510.736.2150",
     "email": "mtkarriem@outlook.com",
-    "website": "mtkarriem.com",
+    "website": "tkarriem2.github.io",
     "caboose": "Extended Employment & Consultant History Furnished Upon Request",
     "denote": "Includes all 'Employment Status' types - Contract/W2, Consultant/1099, Full-Time, etc.",
     "copyright": "Copyright © 2018 - <a class='blue-text' href='' target='_blank'>MTKarriem.com</a> All rights reserved",
