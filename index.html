@@ -1,237 +1,264 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-    <!-- Links -->
-    <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Material+Icons|Lato:600,700|Roboto+Slab:400,700" media='all' /><!-- Open+Sans -->
-    <!-- Compiled from css/styles.less > styles.css-->
-    <link type="text/css" rel="stylesheet" href="css/styles.min.css" media='all' />
-    <!-- Page hiding snippet (recommended)  
-     *Added to default styles > .async-hide { opacity: 0 !important } -->
-    <script>
-        (function(a, s, y, n, c, h, i, d, e) {
-            s.className += ' ' + y;
-            h.start = 1 * new Date;
-            h.end = i = function() {
-                s.className = s.className.replace(RegExp(' ?' + y), '')
-            };
-            (a[n] = a[n] || []).hide = h;
-            setTimeout(function() {
-                i();
-                h.end = null
-            }, c);
-            h.timeout = c;
-        })(window, document.documentElement, 'async-hide', 'dataLayer', 4000, {
-            'GTM-5CPS7SP': true
-        });
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="manifest" href="manifest.json">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Cabin:500" />
+        <link rel="stylesheet" type="text/css" href="css/w3.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <!-- Google Analytics -->
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            ga('create', "UA-96654872-1", 'auto');
+            ga('send', 'pageview');
+        </script>
+        <!-- End Google Analytics -->
+        <style>
+            .w3-theme-dark {
+                color: #fff !important;
+                background-color: #282c37 !important
+            }
 
-    </script>
-    <!-- Analytics-Optimize snippet -->
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-96654872-1', 'auto');
-        ga('require', 'GTM-5CPS7SP'); //Optimize Snippet
-        ga('send', 'pageview');
+            .w3-theme-action {
+                color: #fff !important;
+                background-color: #607d8b !important
+            }
 
-    </script>
-</head>
+            .w3-text-theme {
+                color: #282c37 !important
+            }
 
-<body>
-    <header class="row z-depth-3" role="banner">
-        <a itemscope itemtype="http://schema.org/Person" itemprop="name">
-            <div id="hdrTitle" class="col s9 m6 l5 push-s2 push-m1 push-l1 valign">
-                <span class="font-xs"></span>
-                <span itemprop="name"></span>
-                <span class="font-xs"></span>
-            </div>
-        </a>
-        <div id="hdrBtns" class="col s5 m5 l6 offset-s7 offset-l1 right-align">
-            <ul>
-                <li class="hdrBtn"><i class="icon-m material-icons left">print</i></li>
-                <li class="hdrBtn" data-modal="mdl1"><i class="icon-m material-icons left">cloud_download</i></li>
-                <li class="hdrBtn" data-activates="drpJmp"><i class="icon-m material-icons left">publish</i></li>
-                <li class="hdrBtn"><i class="icon-m material-icons left">search</i></li>
-                <!-- Search Btns -->
-                <li id="srchBtns">
-                    <i class="srchCnl material-icons icon-m">cancel</i>
-                </li>
-            </ul>
-            <div id="hdrSrchDiv1" class="input-field inline">
-                <input placeholder="&nbsp;search keywords" id="hdrSrch" type="text" class="font-sPlus">
-                <label for="hdrSrch" class="font-s">Quick Search</label>
+            .w3-border-theme {
+                border-color: #2b90d9 !important
+            }
+
+            .w3-hover-theme:hover {
+                color: #fff !important;
+                background-color: rgba(75, 75, 75, 0.5) !important
+            }
+
+            .w3-hover-text-theme:hover {
+                color: #607d8b !important
+            }
+
+            .w3-hover-border-theme:hover {
+                border-color: #2b90d9 !important
+            }
+
+            .w3-animate-opacity {
+                animation: opac 1.6s !important
+            }
+
+            .w3-animate-top {
+                animation: animatetop 1s !important
+            }
+
+            .w3-animate-left {
+                animation: animateleft 1s !important
+            }
+
+            .w3-animate-right {
+                animation: animateright 1s !important
+            }
+
+            .w3-animate-bottom {
+                animation: animatebottom 1s !important
+            }
+
+            .w3-animate-zoom {
+                animation: animatezoom 1.2s !important
+            }
+
+            .w3-animate-input {
+                transition: width 1s ease-in-out !important
+            }
+        </style>
+    </head>
+
+    <!-- Start body -->
+
+    <body id="scroll-pane" class="w3-blue-gray" style="overflow-x: hidden; overflow-y: auto; max-height: 100vh">
+        <!-- Side Navigation -->
+        <div id="sideBr" class="w3-theme-dark w3-hide w3-animate-left w3-sidebar w3-rightbar w3-mobile" style="top: 0">
+            <div class="w3-bar-block w3-padding-small w3t15" style="margin: 0.5%">
+                <button id="btnCls" class="w3-bar-item w3-btn far fa-hand-point-left w3-hover-teal w3-mobile"></button>
+                <hr class="w3-2019-pepper-stem" style="margin: 1% 0">
+                <button id="dlBtn" class="w3-bar-item w3-btn fas fa-cloud-download-alt w3-hover-indigo w3-mobile"></button>
+                <button id="prntBtn" class="w3-bar-item w3-btn fa fa-print w3-hover-indigo w3-mobile"></button>
+                <button id="ddcBtn" class="w3-bar-item w3-btn fas fa-external-link-alt w3-hover-indigo w3-hide-small"></button>
+                <button id="optBtn" class="w3-bar-item w3-btn fab fa-whmcs w3-mobile w3-hover-teal w3-center" style="bottom: 0; position: absolute"></button>
             </div>
         </div>
-    </header>
-    <!-- End Header-->
-    <br />
-    <div class="row">
-        <section id="docs-Section" class="col s10 m8 l8 z-depth-4" role="main" itemscope itemtype="http://schema.org/Person">
-            <article id="hdrQual">
-                <blockquote>
-                    <div class="hdr4"></div>
-                </blockquote>
-                <!-- Begin QUAL Tmpl -->
-                <template id='qual-tmpl'>
-               <div class="row">
-                  <div class="qualData col s12">
-                  </div>
-               </div>
-            </template>
-                <!-- End SOFT Tmpl -->
-            </article>
-            <article id="hdrSoft">
-                <blockquote>
-                    <div class="hdr4"></div>
-                </blockquote>
-                <!-- Begin Soft Tmpl -->
-                <template id='soft-tmpl'>
-               <div class="softData col s4" data-hdr="1">
-               </div>
-            </template>
-                <!-- End SHK Tmpl -->
-            </article>
-            <article id="hdrAccr">
-                <blockquote>
-                    <div class="hdr4"></div>
-                </blockquote>
-                <div class="row" itemscope itemtype='http://schema.org/EducationalOrganization'>
-                    <div class="col s6">
-                        <div class="hdr7"></div>
-                        <div class="hdr7"></div>
-                        <div class="hdr7"></div>
-                    </div>
-                    <div class="col s6">
-                        <div class="hdr7"></div>
-                        <div class="hdr7"></div>
-                        <div class="hdr7"></div>
-                        <div class="hdr7"></div>
-                    </div>
+        <!--Main -->
+        <div id="main">
+            <!-- Header -->
+            <header id="pgHdr" class="w3-bar w3-padding-small w3-card-4 w3-theme-dark" role="banner" style="width: 100%; overflow: hidden; position: absolute; top: 0; height: auto">
+                <div class="w3-bar-item w3-left" style="margin: 0 0 0.5em -1em; width: 15%">
+                    <button id="openNav" class="w3-btn w3t15 fas fa-bars w3-left w3-hover-theme" style="padding: 0.5em; left: 0"></button>
                 </div>
-            </article>
-            <article id="hdrLate">
-                <blockquote>
-                    <div class="hdr4"></div>
-                </blockquote>
-                <!-- Begin REH Tmpl -->
-                <template id='late-tmpl'>
-               <div class='row hdrow'>
-                  <div class='lateData col s12' itemscope itemtype='http://schema.org/Organization'>
-                     <div class="row" itemscope itemtype="http://schema.org/Event">
-                        <div class='col s9 jobinfo'>
-                           <span class='jobtitle font-mSmll'  itemprop='jobTitle'></span>
-                           <span class='jobcomp font-sLrg' itemprop='name'></span>
+                <div id="hdrDiv" class="w3-bar-item w3-animate-zoom w3-center" style="margin: -2vh 0 0 -1vw; padding-bottom: 0; width: 70%">
+                    <div id="hdrName" class="w3t3 w3-text-sand w3-nowrap w3-animate-top"></div>
+                    <div id="subHdrNm" class="w3t1 w3-text-amber w3-text-shadow w3-nowrap w3-smallcaps w3-italic w3-animate-bottom" style="margin-top: -0.9em"></div>
+                </div>
+                <div id="srchBox" class=" w3-bar-item w3-hide" style="margin: 0 0.4em; padding: 0; width: 50%">
+                    <input id="hdrSrch" class="w3-right w3-input w3t1 w3-hover-light-gray w3-text-black w3-bold w3-border w3-animate-input" type="text" maxlength="30" autocomplete="off" autocorrect="off" style="width: 50%" />
+                    <button id="clrSrch" class="w3-button w3-light-grey w3-hover-text-pink w3t15 fas fa-eraser w3-hide"></button>
+                </div>
+                <div class="w3-bar-item w3-right" style="margin: 0 -0.5em 0; width:10%">
+                    <button id="btnSrch" class="w3-right w3-btn w3t15 fas fa-search w3-hover-theme" style="padding: 0.125em"></button>
+                </div>
+            </header>
+            <!-- Start Page -->
+            <section id="docs-Section" class="w3-hide w3-content w3-card-4 w3-light-gray w3-animate-zoom" role="main" style="padding: 0.1em 0 0 1em" itemscope itemtype="http://schema.org/Person">
+                <article id="hdrQual" class="w3-container">
+                    <blockquote></blockquote>
+                    <!-- Begin QUAL Tmpl -->
+                    <template id='qual-tmpl'>
+                        <div class="w3-row">
+                            <div class="qualData"></div>
                         </div>
-                        <div class='col s3 font-xsPlus jobdate'></div>
-                     </div>
-                     <div class='empsum font-s' itemprop='description'></div>
-                     <ul></ul>
-                  </div>
-               </div>
-         </template>
-                <!-- End REH Tmpl -->
-            </article>
-            <div id="hdrOthr">
-                <div id="othrHdr" class="font-m"></div>
-                <ul class="center-align"></ul>
-            </div>
-            <div id="caboose" class="font-s center-align"></div>
-            <br />
-        </section>
-        <!-- Container END -->
-        <section id="ads-Section" class="col l3 hide-on-med-and-down">
-        </section>
-    </div>
-    <!-- End Grid Row-->
-    <footer>
-        <div class="row">
-            <a id="btnUp" class="center-align"><i class="icon-mPlus material-icons right">arrow_upward</i><span class="font-s">Back To Top</span></a>
-            <a class="vwCvrLtr font-s hide-on-med-and-down" data-modal="mdl2">View Cover Letter</a>
-            <div id="contactDiv" class="col s5 push-s2" itemscope itemtype="http://schema.org/Person">
-                <div id="ftrLbl1" class="font-xs left">Contact Info:</div>
-                <ul>
-                    <li id="contact1" class="font-sPlus valign-wrapper"><i class="icon-mPlus material-icons no-hover" alt="E-Mail">mail_outline</i></li>
-                    <li id="contact2" class="font-sPlus valign-wrapper"><i class="icon-mPlus no-hover material-icons" alt="Call">perm_phone_msg</i></li>
-                </ul>
-            </div>
-            <div id="social-lnks" class="col s4 push-s2">
-                <div id="ftrLbl2" class="font-xs left">Social Connect:</div>
-                <ul class="soc">
-                    <li>
-                        <a class="soc-facebook"></a>
-                    </li>
-                    <li>
-                        <a class="soc-linkedin"></a>
-                    </li>
-                    <li>
-                        <a class="soc-skype"></a>
-                    </li>
-                    <li>
-                        <a class="soc-googleplus"></a>
-                    </li>
-                    <li>
-                        <a class="soc-telegram"></a>
-                    </li>
-                    <li>
-                        <a class="soc-github"></a>
-                    </li>
-                    <li>
-                        <a class="soc-mail"></a>
-                    </li>
-                    <li>
-                        <a class="soc-sharethis soc-icon-last"></a>
-                    </li>
-                    <li>
-    <a class="soc-pp258"><img src="../img/pp258.png" /></a>
-</li>
-                </ul>
-            </div>
+                    </template>
+                    <!-- End SOFT Tmpl -->
+                </article>
+                <article id="hdrSoft" class="w3-container">
+                    <blockquote></blockquote>
+                    <!-- Begin Soft Tmpl -->
+                    <template id='soft-tmpl'>
+                        <div class="softData w3-third" data-hdr="1"></div>
+                    </template>
+                    <!-- End SHK Tmpl -->
+                </article>
+                <article id="hdrAccr" class="w3-container">
+                    <blockquote></blockquote>
+                    <div class="w3-row" itemscope itemtype='http://schema.org/EducationalOrganization' style="margin-left: 0">
+                        <div class="w3-half m3-mobile w3-padding-small">
+                            <div class="hdr7"></div>
+                            <div class="hdr7"></div>
+                            <div class="hdr7"></div>
+                        </div>
+                        <div class="w3-half w3-mobile w3-padding-small" style="padding-right: -1em">
+                            <div class="hdr7"></div>
+                            <div class="hdr7"></div>
+                            <div class="hdr7"></div>
+                            <div class="hdr7"></div>
+                        </div>
+                    </div>
+                </article>
+                <article id="hdrEmpl" class="w3-container">
+                    <blockquote></blockquote>
+                    <!-- Begin REH Tmpl -->
+                    <template id='empl-tmpl'>
+                        <div class='w3-row w3-bottombar w3-border-theme' style="margin-bottom: 0.25%">
+                            <div class='emplData w3-row textHvr' itemscope itemtype='http://schema.org/Organization' style="margin-top: 1%">
+                                <div class='jobinfo w3-bold w3-cell-row' itemscope itemtype="http://schema.org/Event">
+                                    <div class="ttlcomp w3-cell w3t125 w3-left" style="width: 80%; padding-left: 0.5em">
+                                        <div class='jobtitle' itemprop='jobTitle'></div>
+                                        <div class='jobcomp w3-text-deep-orange w3-smallcaps w3-nowrap' itemprop='name'>
+                                        </div>
+                                    </div>
+                                    <div class='w3-cell w3-display-container w3t1 w3-smallcaps' style="width: 20%">
+                                        <div class="jobdate w3-text-deep-purple w3-display-topright w3-nowrap" style="margin-top: 0.313em"></div>
+                                    </div>
+                                </div>
+                                <div class='empsum w3-text-green w3t085 w3-bold w3-italic' itemprop='description' style="margin-left: 1.5em; text-indent: 5%"></div>
+                                <ul class="w3t1"></ul>
+                            </div>
+                        </div>
+                    </template>
+                    <!-- End REH Tmpl -->
+                </article>
+                <div id="hdrOthr" class="w3-container" style="margin: -3% 0 1% 1.5%">
+                    <div id="othrHdr" class="w3t125 w3-bold w3-left w3-padding-small" style="margin-left: -1em"></div>
+                    <div class="w3-row w3-center"></div>
+                </div>
+                <div id="caboose" class="w3t1 w3-center w3-padding-small w3-text-purple w3-bold" style="margin: 2% 0 -2%">
+                </div>
+                <br />
+            </section>
+            <!-- Footer -->
+            <footer id="ftrPnl" class="w3-row w3-theme-dark w3-card-4 w3-padding-small" style="overflow: hidden; position: absolute; bottom: 0; width: 100%">
+                <div id="cntctPnl" class="w3-hover-black w3-bar w3-card-4 w3-hide-medium w3-hide-large" style="margin: 0.5em -0.5em 0.5em 0; padding: 0.156em">
+                    <i class=" w3-bar-item w3-left far fa-address-book w3t14 w3-text-amber"></i>
+                    <div class="w3-bar-item w3t125 w3-text-shadow" style="margin: -0.156em 0 0 -1.75em">Contact Info</div>
+                    <i id="chevBtn" class="w3-bar-item w3-button w3-hover-black fas fa-chevron-up w3-right w3-animate-left" style="margin-top: 0.156em"></i>
+                </div>
+                <div id="infoBlk" class="w3-hide-small w3-row w3-center w3-animate-top w3t125">
+                    <button id="phoneNo" class="w3-btn w3-mobile">
+                        <i class="fas fa-phone-square w3-text-shadow"></i>
+                    </button>
+                    <button id="emailAddr" class="w3-btn w3-mobile">
+                        <i class="fas fa-envelope-open-text w3-text-khaki w3-text-shadow"></i>
+                    </button>
+                    <button id="webAddr" class="w3-btn w3-mobile">
+                        <i class="fas fa-globe-americas w3-text-light-blue w3-text-shadow"></i>
+                    </button>
+                </div>
+                <!-- Mobile Social Button Row-->
+                <div id="mobSocBlk" class="w3-center w3-hide w3-animate-zoom"></div>
+                <!-- Copyright row -->
+                <div id="cpyRt" class=" w3-row w3-container w3-center w3t085 w3-hide-small" style="opacity: 0.75; position: absolute; bottom: 0; width: 100%">
+                </div>
+            </footer><!-- End footer -->
         </div>
-        <div class="row center-align hide-on-small-only">
-            <div id="copyr" class="col s12 font-miPlus"></div>
-        </div>
-    </footer>
-    <!-- End Footer -->
-    <!-- Floating Buttons -->
+        <!-- End main -->
 
-    <a id="mngPg" class="font-mi" href="" target="_blank" rel="noopener">
-        <i class="tiny material-icons">settings_applications</i>
-    </a>
-    <!-- Mozilla TogetherJS PlaceHolder-->
+        <!-- Button Up -->
+        <button id="btnUp" class="w3-btn w3-ripple w3-2019-princess-blue w3-text-shadow2 fas fa-caret-up w3t2"></button>
 
-    <!-- Misc. - Modals -->
-    <div id="mdl1" class="modal">
-        <div class="dragHdr"><i class="material-icons right">cancel</i></div>
-        <div class="mdlLbl1 font-l"></div>
-        <div class='rowpad'>
-            <div class="mdlLdCnt font-s"></div>
+        <!-- floating eles and modals -->
+        <div id="mdlDlg" class="w3-modal">
+            <div id="mdlEle" class="w3-modal-content w3-theme-dark w3-bottombar w3-card-4 w3-dragHdr">
+                <header id='mdlHdr' class="w3-container w3-center w3-2019-bluestone">
+                    <button id="mdlCls" class="w3-btn w3-2019-bluestone w3t1 w3-display-topright w3-text-shadow fas fa-times w3-hover-text-red" style="padding: 0; margin: 0.167em 0.5em; background-color: transparent"></button>
+                </header>
+                <div id="mdlLbl" class="w3-italic w3t1 w3-left  w3-padding-small"></div>
+                <div id="fltyps" class="w3-bar w3-container w3t2 w3-theme-dark w3-center w3-padding-small"></div>
+            </div>
         </div>
-    </div>
-    <!-- Prod JS Framework Scripts -->
-    <script src="https://cdn.jsdelivr.net/g/jquery,lodash"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.min.js"></script>
-    <script src="src/script.min.js"></script>
-    <script src="src/data.min.js"></script>
-    <script src="https://printjs-4de6.kxcdn.com/print.min.js" async defer></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-      <![endif]-->
-    <!-- Inactive Scripts - Still Testing) -->
-    <!--script src="https://togetherjs.com/togetherjs-min.js"></script-->
-</body>
+
+        <div id="mdlDlg1" class="w3-modal">
+            <div id="mdlEle1" class="w3-modal-content w3-theme-dark w3-bottombar w3-card-4 w3-dragHdr" style="width: 25%">
+                <header id='mdlHdr1' class="w3-container w3-center w3-text-amber w3-2019-bluestone w3t125 w3-text-shadow2">
+                    <button id="mdlCls1" class="w3-btn w3-2019-bluestone w3t1 w3-display-topright w3-text-shadow fas fa-times w3-hover-text-red" style="padding: 0; margin: 0.313em; background-color: transparent"></button>
+                </header>
+                <div id="ddcnt" class="w3-smallcaps w3-bar-block w3t1"></div>
+            </div>
+        </div>
+        <!-- Social Buttons widget -->
+        <div id="socAncrs" class="w3-hide-small w3-hide-medium w3-animate-right w3-card-2" style="padding: 0.85em 0.5em 0.125em !important">
+            <button id='togsoc' class="w3-bold w3t085 w3-btn w3-animate-left w3-border-bottom w3-border-deep-orange" style="padding: 0.2em 0.125em 0.05em">
+                <i id='togsoci' class="w3-right fas fa-angle-double-right" style="margin-right: 9%"></i>
+            </button>
+            <div id="socBtns" class="w3-bar-block w3-center"></div>
+        </div>
+        <!-- framesize -->
+        <div id="framesize" class="w3-hide w3-animate-left w3-dragHdr w3-panel w3-card-4 w3-yellow w3-rightbar w3-border-red w3-hover-border-white w3t1 w3-bold w3-bar-block">
+            <div id="frmSz1" class="w3-bar-item w3t085">Width: </div>
+            <div id="frmSz2" class="w3-bar-item w3t085">Height: </div>
+            <div id="frmSz3" class="w3-bar-item w3t085">ScrollPos: </div>
+        </div>
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/combine/npm/prefixfree@1,npm/jquery@3,npm/hammerjs@2,npm/lodash@4,npm/jquery.scrollto@2,npm/jquery.localscroll@2,npm/print-js-ice6@1"></script>
+        <!--<script type="text/javascript" src="lib/data.js"></script>
+        <script type="text/javascript" src="lib/script.js"></script>
+        <script type="text/javascript" src="lib/misc.js"></script>-->
+        <script type="text/javascript" src="min/lib.min.js"></script>
+        <!-- End scripts -->
+    </body>
 
 </html>
